@@ -1,0 +1,5 @@
+$purple-gardient: linear-gradient(hsl(251, 81%, 60%), hsl(241, 81%, 54%));
+
+@function set-color($color) {
+  @return darken($color, 30%);
+}
