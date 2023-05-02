@@ -8,7 +8,7 @@
 
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   min-height: 100vh;
   width: 100%;
   display: grid;
@@ -21,30 +21,30 @@ body {
 }
 
 .card {
-  box-shadow: 40px 27px 137px -28px rgba(127, 130, 156, 0.72);
+  box-shadow: 4em 2em 8.6em -2em rgba(127, 130, 156, 0.72);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column: 2/3;
-  border-radius: 20px;
+  border-radius: 2em;
 }
 .result {
   background-image: $purple-gardient;
-  padding: 50px;
+  padding: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
-  min-width: 360px;
+  border-radius: 2em;
+  min-width: 22rem;
 
-  h3 {
+  h1 {
     color: hsl(251, 100%, 87%);
-    font-size: 25px;
+    font-size: 2rem;
   }
 
   h2 {
     color: hsl(0, 0%, 90%);
-    font-size: 30px;
-    padding-bottom: 10px;
+    font-size: 2.8rem;
+    padding-bottom: 0.8em;
   }
 
   p {
@@ -53,9 +53,9 @@ body {
   }
 
   .result_bubble {
-    width: 150px;
-    height: 150px;
-    margin: 30px;
+    width: 9em;
+    height: 9em;
+    margin: 1.1em;
     background-image: $circle-gradient;
     border-radius: 50%;
     display: flex;
@@ -65,41 +65,40 @@ body {
 
     h2 {
       color: hsl(0, 0%, 100%);
-      font-size: 50px;
-      padding: 0px;
+      font-size: 4rem;
+      padding: 0em;
     }
     p {
       color: hsl(251, 100%, 75%);
-      font-size: 14px;
+      font-size: 0.9rem;
     }
   }
 }
 
 .summary {
-  padding: 40px;
-  min-width: 360px;
+  padding: 3em;
+  min-width: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   h2 {
-    padding-bottom: 10px;
+    padding-bottom: 0.8em;
   }
 
   .summary_card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 0.8em;
+    border-radius: 0.8em;
 
     div {
       display: flex;
     }
 
     img {
-      padding-right: 10px;
+      padding-right: 0.8em;
     }
 
     .summary_card_skill {
@@ -114,7 +113,7 @@ body {
       }
       p:nth-of-type(2) {
         color: hsl(300, 2%, 59%);
-        padding-left: 10px;
+        padding-left: 0.8em;
       }
     }
   }
@@ -153,22 +152,14 @@ body {
     color: hsl(0, 0%, 100%);
     align-items: center;
     justify-content: center;
-    height: 45px;
-    border-radius: 20px;
-    margin-top: 20px;
+    height: 3em;
+    border-radius: 1.2em;
+    margin-top: 1.8em;
 
     &:hover {
       background-image: $purple-gardient;
     }
   }
-}
-
-.attribution {
-  grid-column: 2/3;
-  padding: 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -181,11 +172,11 @@ body {
   }
 
   .result {
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0em;
+    border-top-right-radius: 0em;
   }
 
   .summary_card {
-    margin: 10px;
+    margin: 0.8em;
   }
 }
