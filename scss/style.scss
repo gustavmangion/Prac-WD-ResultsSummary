@@ -9,14 +9,15 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  display: grid;
+  place-items: center;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 40px;
 }
 
 .card {
@@ -173,7 +174,6 @@ body {
 @media (max-width: 768px) {
   .container {
     display: block;
-    margin: 0px;
   }
 
   .card {
